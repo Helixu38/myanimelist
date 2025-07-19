@@ -14,7 +14,7 @@ struct ContentView: View {
                     .font(.title)
 
                 Button {
-                    goToScreen(.mainPage, path: &path)
+                    goToScreen(.mainPage, path: &path , canGoBack: false)
                 } label: {
                     Label("Getting Started", systemImage: "arrow.right.circle.fill")
                         .font(.headline)
